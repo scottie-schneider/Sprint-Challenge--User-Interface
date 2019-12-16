@@ -24,9 +24,9 @@ ABOUT PAGE TASKS
   DONE Link the Home navigation item back to the index.html page.
   Build the rest of the about page layout to match the design
     DONE About section is displaying full width, styled
-    Cards are scalable, resizable, flex.
+    DONE Cards are scalable, resizable, flex.
       DONE Got the container displaying flex
-      Individual Card styling 
+      DONE Individual Card styling 
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -92,20 +92,30 @@ p {
 }
 
 .top-content {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-top: 3rem;
-    margin-bottom: 20px;
-    border-bottom: 1px dashed black;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 3rem;
+  margin-bottom: 20px;
+  border-bottom: 1px dashed black;
+}
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 3rem 1rem 20px 1rem;
+  border-bottom: none;
 }
 
-.top-content .text-container {
-    width: 48%;
-    padding: 0 1%;
-    padding-bottom: 20px;  
+.top-content .text-container,
+.about-content.about .text-container {
+  margin-top: 1rem;
+  width: 48%;
+  padding: 0 1%;
+  padding-bottom: 20px;  
 }
-.top-content .text-container.about {
+.top-content .text-container.about,
+.about-content.about .text-container.about {
   width: 100%;
 }
 
@@ -325,6 +335,7 @@ nav ul a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  border-bottom: 1px dashed black;
 }
 .products-list .product {
   flex: 0 0 calc(50% - 1rem);
