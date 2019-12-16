@@ -33,6 +33,18 @@ STRETCH GOALS:
  DONE - Hover animations on buttons (color and background) Introduce CSS animations to your site.
  Build a contact page and create a form with several inputs of your choosing
  DONE Add responsive breakpoints to your code by using media queries
+
+ Self Study Questions:
+  If you were to describe semantic HTML to the next cohort of students, what would you say?
+    HTML that helps both developers and machines understand your code.
+  Name two big differences between display: block; and display: inline;
+    1) inline-block allows width and height. Also, inline doesn't respect top and bottom margins/paddings.
+  What are the 4 areas of the box model?
+    Content Edge, padding edge, border edge, margin edge.
+  While using flexbox, what axis does the following property work on: align-items: center?
+    Cross Axis
+  Explain why git is valuable to a team of developers.
+    It allows collaboration and version control.
 */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
